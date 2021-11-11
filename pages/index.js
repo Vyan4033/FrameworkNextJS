@@ -1,12 +1,16 @@
 import Head from 'next/head'
 import Card from '../components/card'
 import Header from '../components/header'
-import Isi from '../components/isi'
-
+import IsiIndex from '../components/isi'
 
 export default function Home() {
+    let Isi = {
+        Name : "Hotel Di Kota Banyuwangi",
+        Name2 : "TEMUKAN INFORMASI HOTEL YANG TERDAPAT DI KOTA BANYUWANGI"
+
+    }
     let Hotel1 = {
-        Judul : "List Hotel",
+        Judul : "Hotel",
         Url : "https://beritalima.com/wp-content/uploads/2018/05/IMG_20180509_5756.jpg",
         NamaHotel : "Hotel Aston Banyuwangi",
         Deskripsi : "Aston Banyuwangi Hotel & Conference Center juga merupakan pilihan utama untuk mengakomodasi para wisatawan yang akan mengagumi keindahan pemandangan alam Indonesia di Banyuwangi..."
@@ -27,7 +31,10 @@ export default function Home() {
         <title>Selamat Datang</title>
       </Head>
         <Header/>
-        <Isi/>
+        <IsiIndex
+          Name = {Isi.Name}
+          Name2 = {Isi.Name2}
+        />
         <Card
             Judul = {Hotel1.Judul} 
             Url = {Hotel1.Url}

@@ -8,7 +8,7 @@ export default function Header(){
                         <li><a className="nav-link px-5 link-dark">Home</a></li>
                     </Link>
                     <Link href="/">
-                        <li><a className="nav-link px-5 link-dark">List Hotel</a></li>
+                        <li><a className="nav-link px-5 link-dark">Hotel</a></li>
                     </Link>
                     <Link href="/about">
                         <li><a className="nav-link px-5 link-dark">About</a></li>
