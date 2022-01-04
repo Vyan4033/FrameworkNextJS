@@ -1,5 +1,6 @@
 import Header from "../../../../components/header";
 import Link from "next/link";
+import Head from "next/head";
 
 export async function getServerSideProps(context){
     let idHotel = context.params.id;
@@ -10,6 +11,11 @@ export async function getServerSideProps(context){
 
 const List = (props) => (
     <div>
+        <Head>
+            <title>
+                List Hotel
+            </title>
+        </Head>
         <Header/>
         <h1 className="display-5 fw-bold text-success text-opacity-80 justify-content-center d-flex my-5">
                 List Hotel
